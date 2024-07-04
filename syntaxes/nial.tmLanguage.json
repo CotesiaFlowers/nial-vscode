@@ -41,16 +41,16 @@
 		"name": {
 			"patterns": [{
 				"name": "entity.name.function.nial",
-				"match": "(?i)([A-Z_]+\\b)\\s+(?=(\\b(IS|GETS|:=)\\s+\\b(OPERATION|OP)\\b))"
+				"match": "(?i)([A-Z_][A-Z0-9_]*\\b)\\s+(?=(\\b(IS|GETS|:=)\\s+\\b(OPERATION|OP)\\b))"
 
 			},
 			{
 				"name": "support.variable.nial",
-				"match": "(?i)([A-Z_]+\\b)\\s+(?=(\\b(IS|GETS|:=)\\b))"
+				"match": "(?i)([A-Z_][A-Z0-9_]*\\b)\\s+(?=(\\b(IS|GETS|:=)\\b))"
 			},
 			{
 				"name": "support.class.nial",
-				"match": "(?i)\\b([A-Z_]+)\\b"
+				"match": "(?i)\\b([A-Z_][A-Z0-9_]*)\\b"
 			}
 		]
 		},
