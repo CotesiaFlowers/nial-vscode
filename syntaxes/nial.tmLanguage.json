@@ -1,0 +1,92 @@
+{
+	"name": "Nial",
+	"comment": "https://www.nial-array-language.org/ndocs/NialDictionary.html",
+	"scopeName": "source.nial",
+	"patterns": [
+		{
+			"include": "#character"
+		},
+		{
+			"include": "#parameter"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comment"
+		},
+		{
+			"include": "#number"
+		},
+		{
+			"include": "#name"
+		}
+	],
+	"repository": {
+		"number": {
+			"patterns": [{
+				"name": "constant.numeric.nial",
+				"match": "(-?\\.?[0-9]+?\\.?(?:-?[0-9]+)?)"
+			}]
+		},
+		"character": {
+			"patterns": [{
+				"name": "constant.character.nial",
+				"match": "`."
+			}]
+		},
+		"name": {
+			"patterns": [{
+				"name": "entity.name.function",
+				"match": "(?i)([A-Z_]+\\b)\\s+(?=(\\b(IS|GETS|:=)\\s+\\b(OPERATION|OP)\\b))"
+
+			},
+			{
+				"name": "support.variable.nial",
+				"match": "(?i)([A-Z_]+\\b)\\s+(?=(\\b(IS|GETS|:=)\\b))"
+			},
+			{
+				"name": "support.class.bqn",
+				"match": "(?i)\\b([A-Z_]+)\\b"
+			}
+		]
+		},
+		"parameter": {
+			"patterns": [{
+				"name": "keyword.control.nial",
+				"begin": "(?i)\\b(OP|OPERATION)\\b",
+				"patterns": [{
+					"name": "variable.parameter.nial",
+					"match": "(?i)([A-Z_]+\\b)+"
+				}],
+				"end": "(?i)\\{|\\b(BEGIN)\\b|$"
+			}]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.nial",
+				"match": "(?i)\\b(BEGIN|EXIT|EXPRESSION|OP|OPERATION|TR|TRANSFORMER|EXTERNAL|GETS|IS|LOCAL|NONLOCAL|VARIABLE|IF|THEN|ELSEIF|ELSE|ENDIF|CASE|FROM|END|ENDCASE|FOR|WITH|DO|ENDFOR|REPEAT|UNTIL|ENDREPEAT|WHILE|DO|ENDWHILE)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.single.nial",
+            "begin": "'",
+            "end": "'"
+		},
+		"comment": {
+			"patterns": [{
+				"name": "comment.block.nial",
+				"begin": "^#",
+				"end": "^\\s*\\n"
+			},
+			{
+				"name": "comment.line.percentage.nial",
+				"begin": "%",
+				"end": ";|^\\s*\\n"
+			}]
+		}
+	}
+}
