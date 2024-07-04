@@ -4,6 +4,12 @@ All notable changes to the "nial-language" extension will be documented in this 
 
 ## [Unreleased]
 
+### v0.1.1
+
+### Fixed
+
+* Highlighting real numbers.
+
 ## [Released]
 
 ### v0.1.0
