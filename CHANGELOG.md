@@ -9,6 +9,7 @@ All notable changes to the "nial-language" extension will be documented in this 
 ### Fixed
 
 * Highlighting real numbers.
+* Parameters with numbers not being highlighted.
 
 ## [Released]
 

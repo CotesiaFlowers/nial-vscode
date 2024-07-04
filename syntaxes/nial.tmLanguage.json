@@ -63,7 +63,7 @@
 				"begin": "(?i)\\b(OP|OPERATION)\\b",
 				"patterns": [{
 					"name": "variable.parameter.nial",
-					"match": "(?i)([A-Z_]+\\b)+"
+					"match": "(?i)([A-Z_][A-Z0-9_]*\\b)+"
 				}],
 				"end": "(?i)\\{|\\b(BEGIN)\\b|$"
 			}]
