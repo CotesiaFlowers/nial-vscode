@@ -22,6 +22,9 @@
 			"include": "#number"
 		},
 		{
+			"include": "#language"
+		},
+		{
 			"include": "#name"
 		}
 	],
@@ -75,6 +78,10 @@
 			"name": "string.quoted.single.nial",
             "begin": "'",
             "end": "'"
+		},
+		"language": {
+			"name": "variable.language.nial",
+			"match": "(?i)(\\b[ol]+\\b)"
 		},
 		"comment": {
 			"patterns": [{

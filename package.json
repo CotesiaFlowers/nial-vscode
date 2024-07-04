@@ -2,7 +2,7 @@
   "name": "nial-language",
   "displayName": "Nial language",
   "description": "Nial array programming language support",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "tabbytranspose",
   "repository": {
     "type": "git",
