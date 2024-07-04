@@ -3,6 +3,11 @@
   "displayName": "Nial language",
   "description": "Nial array programming language support",
   "version": "0.0.1",
+  "publisher": "tabbytranspose",
+  "repository": {
+    "type": "git",
+    "url": "https://codeberg.org/TabbyTranspose/nial-vscode"
+  },
   "engines": {
     "vscode": "^1.90.0"
   },
