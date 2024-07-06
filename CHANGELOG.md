@@ -2,16 +2,13 @@
 
 All notable changes to the "nial-language" extension will be documented in this file.
 
-## [Unreleased]
+## [Released]
 
 ### v0.1.1
 
 ### Fixed
 
-* Highlighting real numbers.
-* Parameters with numbers not being highlighted.
-
-## [Released]
+* Highlighting of real numbers and parameters.
 
 ### v0.1.0
 
